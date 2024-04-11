@@ -1,40 +1,52 @@
-/* Add these styles to src/App.css */
-main {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.course {
-  border: 1px solid #ddd;
+/* src/App.css */
+table {
+  width: 100%;
+  border-collapse: collapse;
   margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 8px;
 }
 
-.course h2 {
-  margin-top: 0;
+th, td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
 }
 
-.course button {
-  background-color: #004d99;
-  color: white;
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+/* Enhanced button styles */
+button {
+  margin-right: 5px;
   border: none;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
   cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-.course button:hover {
-  background-color: #003366;
+button:hover {
+  opacity: 0.8;
+  transform: scale(0.98); /* Slight scale down effect on hover */
 }
 
-.course ul {
-  list-style-type: none;
-  padding: 0;
+.approve-btn {
+  background-color: #4CAF50; /* Green */
+  color: white;
 }
 
-.course li {
-  padding: 5px 0;
+.reject-btn {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.view-details-btn {
+  background-color: #2196F3; /* Blue */
+  color: white;
 }
